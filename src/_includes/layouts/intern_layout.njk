@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+
+<html>
+
+  {% include 'header.njk' %}
+
+  <body class="is-preload">
+
+    <div id="wrapper">
+
+      {% include 'navigation.njk' %}
+      {% include 'hero-top_intern.njk' %}
+
+      {{ content | safe }}
+
+      {% include 'footer.njk' %}
+
+    </div>
+
+  {% include 'scripts.njk' %}
+
+</body>
+
+</html>

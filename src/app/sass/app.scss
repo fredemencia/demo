@@ -1,0 +1,64 @@
+
+@import 'variables';
+//@import 'derived-variables';
+
+
+//@import "bulma";
+// Import only what you need from Bulma
+//@import "node_modules/bulma/sass/utilities/_all.sass";
+//@import "node_modules/bulma/sass/base/_all.sass";
+//@import "node_modules/bulma/sass/elements/button.sass";
+//@import "node_modules/bulma/sass/elements/container.sass";
+//@import "node_modules/bulma/sass/elements/title.sass";
+//@import "node_modules/bulma/sass/form/_all.sass";
+//@import "node_modules/bulma/sass/grid/_all.sass";
+//@import "node_modules/bulma/sass/components/all.sass";
+//@import "node_modules/bulma/sass/layout/hero.sass";
+//@import "node_modules/bulma/sass/layout/section.sass";
+
+@import "node_modules/bulma/bulma.sass";
+
+////
+
+@import 'utils/iconanims/icoscvg_animator.scss';
+@import 'utils/iconanims/icoasso_animator.scss';
+@import 'utils/iconanims/icocom_animator.scss';
+@import 'utils/iconanims/icoagen_animator.scss';
+@import 'utils/iconanims/icorespir_animator.scss';
+
+@import 'utils/icomoon/style.scss';
+
+@import 'mixins';
+
+@import 'components/bulma-space-rwd';
+
+@import 'components/slick';
+
+@import 'components/colorsschem';
+
+@import 'components/locomotive-scroll';
+
+@import 'components/splide/core/splide-core';
+
+@import 'typography';
+
+@import 'common';
+
+@import 'buttons';
+
+
+//@import 'components/slick-theme';
+
+@import 'templates/navigation';
+
+@import 'templates/hero-area';
+
+@import 'templates/homepage';
+
+@import 'templates/blog';
+
+@import 'templates/about';
+
+@import 'templates/portfolio';
+
+@import 'templates/galops';

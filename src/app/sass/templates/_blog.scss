@@ -1,0 +1,75 @@
+.card-lg {
+  flex-direction: row-reverse;
+  align-items: center;
+
+  @include desktop {
+    flex-direction: column;
+  }
+}
+
+blockquote {
+  display: inline-block;
+  padding: 10px 20px;
+  background: $gray;
+  border-left: 2px solid $primary-color;
+  font-style: italic;
+  font-size: 22px;
+}
+
+.content {
+
+  strong {
+    font-family: $secondary-font;
+    font-size: 22px;
+    font-weight: normal;
+    color: $text-color-dark;
+    display: inherit;
+    line-height: 1.5;
+  }
+}
+
+
+.related-card  {
+  padding-bottom: 0px;
+    .article-title {
+      display:block;
+      font-size: 13px;
+      font-weight: 500;
+    }
+    .article-account,.article-date {
+      display:block;
+      font-size: 11px;
+      color: #95A5A6;
+    }
+
+    .related-card img {
+      height:68px;
+    }
+  &.media .media, &.media+.media {
+    border-top:1px rgba($text-color,0.25) solid;
+  }
+}
+
+.related-list {
+  .list-header {
+    margin-bottom: 10px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom:1px $text-color solid;
+    .autoplay-title {
+      font-weight: 200;
+      display: inline-block;
+    }
+    .autoplay-toggle {
+      float:right;
+    }
+    .autoplay-toggle .fa{
+      font-size: 13px;
+      padding:5px 10px;
+    }
+
+  }
+}
+

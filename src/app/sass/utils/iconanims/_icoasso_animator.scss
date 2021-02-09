@@ -1,0 +1,174 @@
+
+@keyframes activity-path2_to__to {
+  0% {
+    transform: translate(0px, 0px)
+  }
+  50% {
+    transform: translate(10.581297px, 1.741469px)
+  }
+  100% {
+    transform: translate(0px, 0px)
+  }
+}
+@keyframes activity-path2_tr__tr {
+  0% {
+    transform: rotate(0deg)
+  }
+  50% {
+    transform: rotate(0deg)
+  }
+  100% {
+    transform: rotate(0deg)
+  }
+}
+
+@keyframes activity-man_to__to {
+  0% {
+    transform: translate(22.500000px, 30.500000px)
+  }
+  50% {
+    transform: translate(23.954837px, 33.816654px)
+  }
+  100% {
+    transform: translate(22.500000px, 30.500000px)
+  }
+}
+
+@keyframes activity-arm2_tr__tr {
+  0% {
+    transform: translate(15px, 12.500000px) rotate(0deg)
+  }
+  50% {
+    transform: translate(15px, 12.500000px) rotate(38.690720deg)
+  }
+  100% {
+    transform: translate(15px, 12.500000px) rotate(0deg)
+  }
+}
+
+@keyframes activity-leg2_tr__tr {
+  0% {
+    transform: translate(19.500000px, 32.500000px) rotate(0deg)
+  }
+  50% {
+    transform: translate(19.500000px, 32.500000px) rotate(-44.231909deg)
+  }
+  100% {
+    transform: translate(19.500000px, 32.500000px) rotate(0deg)
+  }
+}
+
+@keyframes activity-leg2b_tr__tr {
+  0% {
+    transform: translate(12.245740px, 12.530163px) rotate(0deg)
+  }
+  50% {
+    transform: translate(12.245740px, 12.530163px) rotate(-43.193376deg)
+  }
+  100% {
+    transform: translate(12.245740px, 12.530163px) rotate(0deg)
+  }
+}
+
+@keyframes activity-leg1_to__to {
+  0% {
+    transform: translate(22.700290px, 33.197564px)
+  }
+  50% {
+    transform: translate(21.637622px, 30.034294px)
+  }
+  100% {
+    transform: translate(22.700290px, 33.197564px)
+  }
+}
+
+@keyframes activity-leg1_tr__tr {
+  0% {
+    transform: rotate(0deg)
+  }
+  50% {
+    transform: rotate(71.205466deg)
+  }
+  100% {
+    transform: rotate(0deg)
+  }
+}
+
+@keyframes activity-leg2b2_to__to {
+  0% {
+    transform: translate(14px, 8px)
+  }
+  50% {
+    transform: translate(12.811633px, 5.817348px)
+  }
+  100% {
+    transform: translate(14px, 8px)
+  }
+}
+
+@keyframes activity-leg2b2_tr__tr {
+  0% {
+    transform: rotate(0deg)
+  }
+  50% {
+    transform: rotate(13.457414deg)
+  }
+  100% {
+    transform: rotate(0deg)
+  }
+}
+
+@keyframes activity-arm1_tr__tr {
+  0% {
+    transform: translate(13px, 11.500000px) rotate(0deg)
+  }
+  50% {
+    transform: translate(13px, 11.500000px) rotate(-36.873506deg)
+  }
+  100% {
+    transform: translate(13px, 11.500000px) rotate(0deg)
+  }
+}
+
+
+.asso-is-hover {
+  &:hover {
+
+
+    #activity-man_to {
+      animation: activity-man_to__to 1500ms linear infinite normal forwards
+    }
+
+    #activity-arm2_tr {
+      animation: activity-arm2_tr__tr 1500ms linear infinite normal forwards
+    }
+
+    #activity-leg2_tr {
+      animation: activity-leg2_tr__tr 1500ms linear infinite normal forwards
+    }
+
+    #activity-leg2b_tr {
+      animation: activity-leg2b_tr__tr 1500ms linear infinite normal forwards
+    }
+
+    #activity-leg1_to {
+      animation: activity-leg1_to__to 1500ms linear infinite normal forwards
+    }
+
+    #activity-leg1_tr {
+      animation: activity-leg1_tr__tr 1500ms linear infinite normal forwards
+    }
+
+    #activity-leg2b2_to {
+      animation: activity-leg2b2_to__to 1500ms linear infinite normal forwards
+    }
+
+    #activity-leg2b2_tr {
+      animation: activity-leg2b2_tr__tr 1500ms linear infinite normal forwards
+    }
+
+    #activity-arm1_tr {
+      animation: activity-arm1_tr__tr 1500ms linear infinite normal forwards
+    }
+  }
+}

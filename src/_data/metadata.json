@@ -1,0 +1,20 @@
+{
+  "title": "1001 galops",
+  "url": "https://1001galops.com/",
+  "description": "Cours d'équitations, Randonnées équestres , dans le Vexin .",
+  "feed": {
+    "subtitle": "L'actualité de 1001 galops.",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "id": "https://1001galops.com/"
+  },
+  "jsonfeed": {
+    "path": "/feed/feed.json",
+    "url": "https://1001galops.com/feed/feed.json"
+  },
+  "author": {
+    "name": "Scheherazade Bracht",
+    "email": "1001galops@gmail.com",
+    "url": "https://1001galops.com//"
+  }
+}

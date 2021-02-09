@@ -1,0 +1,77 @@
+
+@keyframes association-hand1_to__to {
+  0% {
+    transform: translate(0.000012px, 74.810340px)
+  }
+  1% {
+    transform: translate(13.057515px, 101.478255px)
+  }
+  12% {
+    transform: translate(0.000012px, 74.810340px)
+  }
+  100% {
+    transform: translate(0.000012px, 74.810340px)
+  }
+}
+
+@keyframes association-hand1_tr__tr {
+  0% {
+    transform: rotate(0deg)
+  }
+  1% {
+    transform: rotate(-17.867798deg)
+  }
+  12% {
+    transform: rotate(0deg)
+  }
+  100% {
+    transform: rotate(0deg)
+  }
+}
+
+@keyframes association-hand2_to__to {
+  0% {
+    transform: translate(65.233907px, 63.860472px)
+  }
+  1% {
+    transform: translate(52.967028px, 88.498934px)
+  }
+  12% {
+    transform: translate(65.233907px, 63.860472px)
+  }
+  100% {
+    transform: translate(65.233907px, 63.860472px)
+  }
+}
+
+@keyframes association-hand2_tr__tr {
+  0% {
+    transform: rotate(0deg)
+  }
+  1% {
+    transform: rotate(24.232534deg)
+  }
+  12% {
+    transform: rotate(0deg)
+  }
+  100% {
+    transform: rotate(0deg)
+  }
+}
+
+.asso-is-hover {
+  &:hover {
+    #association-hand1_to {
+      animation: association-hand1_to__to 3000ms ease-out 2 normal forwards
+    }
+    #association-hand1_tr {
+      animation: association-hand1_tr__tr 3000ms ease-out 2 normal forwards
+    }
+    #association-hand2_to {
+      animation: association-hand2_to__to 3000ms ease-out 2 normal forwards
+    }
+    #association-hand2_tr {
+      animation: association-hand2_tr__tr 3000ms ease-out 2 normal forwards
+    }
+  }
+}

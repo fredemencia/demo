@@ -1,0 +1,151 @@
+.hero-area {
+  position: relative;
+  display: block;
+  height: 102vh;
+  width: 100vw;
+
+  .layer-bg {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 85%;
+    height: 85%;
+    position: absolute;
+    display: flex;
+    align-content: flex-end;
+    justify-content: flex-end;
+    pointer-events: none;
+    z-index: 2;
+    .fullslider {
+      border-radius: 2rem;
+      overflow: hidden;
+      bottom:0;
+      width: 100%;
+      height: 100%;
+      pointer-events:initial;
+      box-shadow: 0rem 0 2rem rgba(0,0,0,0.2);
+      .splide {
+       width: 100%;
+        height: 100%;
+        .splide__slide__container {
+          height: 100%;
+          width: 100%;
+        }
+        .splide__track,.splide__slide,.splide__list {
+          height: 100%;
+          width: 100%;
+        }
+        .splide__list {
+          border-radius: 2rem;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+  .container {
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    top: 25%;
+  }
+
+  @include until ($tablet)  {
+    overflow: hidden;
+    height: 90vh;
+  }
+
+  @include until ($widescreen)  {
+    overflow: hidden;
+  }
+
+  @include from ($widescreen)  {
+    overflow: hidden;
+  }
+
+  h1 {
+    position: relative;
+    text-align: center;
+    z-index: 2;
+  }
+
+  > .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    z-index: 2;
+    h1 {
+      font-weight: 900;
+      font-size: 5rem;
+      color:$topblue
+    }
+  }
+
+
+
+   .scroll-item {
+     position: absolute;
+     bottom:12px;
+     background-image: url('../images/mousebg.png');
+     background-position: bottom center;
+     background-repeat: no-repeat;
+     display: flex;
+     z-index: 20;
+     left: 50%;
+     width: 162px;
+     height: 54px;
+     transform: translate(-50%,0);
+      align-items: center;
+     justify-content: center;
+   }
+
+  &.is-intern {
+    height: 374px;
+    @include from ($widescreen)  {
+      height: 480px;
+    }
+    &::after {
+      content:'';
+      width: 100vw;
+      height: calc(100vw * 114 / 1400);
+      background-image: url('../images/backgrounds/wave-intern.png');
+      background-size:cover;
+      background-repeat: no-repeat;
+      display: block;
+      position: absolute;
+      z-index: 10;
+      pointer-events: none;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+}
+
+.layer {
+  position: absolute;
+  z-index: 1;
+}
+
+
+.container_hero {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display:flex;
+  width:100%;
+}
+.phoneArea {
+  color: $lightbrown;
+  transform: rotate(
+      -90deg
+  ) translate(-50%,50%);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform-origin: 0% 0%;
+  padding: 0.5rem;
+  border-radius: 0.6rem;
+  background: rgba(250,250,250,0.8);
+}

@@ -1,0 +1,175 @@
+@import "variables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?rl7g5');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?rl7g5#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff2?rl7g5') format('woff2'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?rl7g5') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?rl7g5') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?rl7g5##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@mixin icomoon-helper($code: null) {
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @if $code != null {
+    content: $code;
+  }
+}
+
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+
+  @include icomoon-helper;
+}
+
+.button[class^="icon-"],
+.button[class*=" icon-"] {
+  font-family: inherit;
+  &::before{
+    @include icomoon-helper;
+    margin-right: rem-calc(5px);
+  }
+}
+
+
+// Icon Sizes
+.icon-2x{
+  font-size: 2em;
+   @include until ($tablet)  {
+    font-size: 1rem;
+  }
+}
+
+.icon-3x{
+  font-size: 3em;
+}
+
+.icon-4x{
+  font-size: 3.5em;
+}
+
+.icon-5x{
+  font-size: 5em;
+}
+
+.icon-12x{
+  font-size: 12em;
+}
+
+
+.icon-mail {
+  &:before {
+    content: $icon-mail;
+  }
+}
+.icon-trust {
+  &:before {
+    content: $icon-trust;
+  }
+}
+.icon-dotmap {
+  &:before {
+    content: $icon-dotmap;
+  }
+}
+.icon-calend {
+  &:before {
+    content: $icon-calend;
+  }
+}
+.icon-search-ilus {
+  &:before {
+    content: $icon-search-ilus;
+  }
+}
+.icon-agenda {
+  &:before {
+    content: $icon-agenda;
+  }
+}
+.icon-arrow-right {
+  &:before {
+    content: $icon-arrow-right;
+  }
+}
+.icon-arrow-left {
+  &:before {
+    content: $icon-arrow-left;
+  }
+}
+.icon-arrow-bold-left {
+  &:before {
+    content: $icon-arrow-bold-left;
+  }
+}
+.icon-arrow-bold-right {
+  &:before {
+    content: $icon-arrow-bold-right;
+  }
+}
+.icon-mouse {
+  &:before {
+    content: $icon-mouse;
+  }
+}
+.icon-like {
+  &:before {
+    content: $icon-like;
+  }
+}
+.icon-team {
+  &:before {
+    content: $icon-team;
+  }
+}
+.icon-file {
+  &:before {
+    content: $icon-file;
+  }
+}
+.icon-map {
+  &:before {
+    content: $icon-map;
+  }
+}
+.icon-list {
+  &:before {
+    content: $icon-list;
+  }
+}
+.icon-target {
+  &:before {
+    content: $icon-target;
+  }
+}
+.icon-mappoint {
+  &:before {
+    content: $icon-mappoint;
+  }
+}
+.icon-why {
+  &:before {
+    content: $icon-why;
+  }
+}
+.icon-home {
+  &:before {
+    content: $icon-home;
+  }
+}
+
+

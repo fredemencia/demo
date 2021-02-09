@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title or metadata.title }}</title>
+    <meta name="description" content="{{ description or metadata.description }}">
+
+    <link rel="stylesheet" href="{{ '/statics/css/app.css' | url }}">
+    <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
+    <link rel="alternate" href="{{ metadata.jsonfeed.path | url }}" type="application/json" title="{{ metadata.title }}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="57x57" href="/statics/images/fav/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/statics/images/fav/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/statics/images/fav/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/statics/images/fav/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/statics/images/fav/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/statics/images/fav/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/statics/images/fav/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/statics/images/fav/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/statics/images/fav/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/statics/images/favandroid-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/statics/images/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/statics/images/fav/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/statics/images/fav/favicon-16x16.png">
+    <link rel="shortcut icon" href="/statics/images/fav/favicon.ico">
+    <link rel="manifest" href="/statics/images/fav/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body class="is-preload">
+  <div id="wrapper" {% if templateClass %} class="{{ templateClass }}"{% endif %}>
+
+    {% include 'navigation.njk' %}
+
+
+    {% include 'hero-top.njk' %}
+
+
+      {{ content | safe }}
+    {% include 'footer.njk' %}
+
+    </div>
+
+  {% include 'scripts.njk' %}
+    <!-- Current page: {{ page.url | url }} -->
+  </body>
+</html>

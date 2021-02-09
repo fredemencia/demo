@@ -1,0 +1,67 @@
+
+@keyframes respir-energy_ts__ts {
+  0% {
+    transform: translate(32.499773px, 36.465026px) scale(1, 1)
+  }
+  35% {
+    transform: translate(32.499773px, 36.465026px) scale(1.062338, 1.062338);
+    animation-timing-function: cubic-bezier(0.250000, 0.460000, 0.450000, 0.940000)
+  }
+  74% {
+    transform: translate(32.499773px, 36.465026px) scale(0.957283, 0.957283);
+    animation-timing-function: cubic-bezier(0.250000, 0.460000, 0.450000, 0.940000)
+  }
+  100% {
+    transform: translate(32.499773px, 36.465026px) scale(1, 1)
+  }
+}
+
+@keyframes respir-p-left_ts__ts {
+  0% {
+    transform: translate(18px, 30px) scale(1, 1)
+  }
+  35% {
+    transform: translate(18px, 30px) scale(1.218938, 1.218938);
+    animation-timing-function: cubic-bezier(0.250000, 0.460000, 0.450000, 0.940000)
+  }
+  74% {
+    transform: translate(18px, 30px) scale(0.890975, 0.890975);
+    animation-timing-function: cubic-bezier(0.250000, 0.460000, 0.450000, 0.940000)
+  }
+  100% {
+    transform: translate(18px, 30px) scale(1, 1)
+  }
+}
+
+@keyframes respir-p-right_ts__ts {
+  0% {
+    transform: translate(25px, 29px) scale(1, 1)
+  }
+  35% {
+    transform: translate(25px, 29px) scale(1.218938, 1.218938);
+    animation-timing-function: cubic-bezier(0.250000, 0.460000, 0.450000, 0.940000)
+  }
+  74% {
+    transform: translate(25px, 29px) scale(0.890975, 0.890975);
+    animation-timing-function: cubic-bezier(0.250000, 0.460000, 0.450000, 0.940000)
+  }
+  100% {
+    transform: translate(25px, 29px) scale(1, 1)
+  }
+}
+
+
+.asso-is-hover {
+  &:hover {
+    #respir-p-right_ts {
+      animation: respir-p-right_ts__ts 2000ms linear infinite normal forwards
+    }
+
+    #respir-p-left_ts {
+      animation: respir-p-left_ts__ts 2000ms linear infinite normal forwards
+    }
+    #respir-energy_ts {
+      animation: respir-energy_ts__ts 2000ms linear infinite normal forwards
+    }
+  }
+}

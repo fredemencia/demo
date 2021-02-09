@@ -1,0 +1,192 @@
+
+@keyframes agenda-calendar_to__to {
+  0% {
+    transform: translate(12.512624px, 70.579164px)
+  }
+  13.333333% {
+    transform: translate(13.458338px, 70.137116px)
+  }
+  18% {
+    transform: translate(13.987208px, 69.889909px)
+  }
+  26.666667% {
+    transform: translate(13.861561px, 80.294134px)
+  }
+  30% {
+    transform: translate(-2.065549px, 118.139026px)
+  }
+  33.333333% {
+    transform: translate(-0.813236px, 81.981046px)
+  }
+  44% {
+    transform: translate(14.969396px, 69.430812px)
+  }
+  48% {
+    transform: translate(10.965092px, 71.302517px)
+  }
+  66.666667% {
+    transform: translate(12.512624px, 70.579164px)
+  }
+  100% {
+    transform: translate(12.512624px, 70.579164px)
+  }
+}
+@keyframes agenda-calendar_tr__tr {
+  0% {
+    transform: rotate(0deg)
+  }
+  17.333333% {
+    transform: rotate(0deg)
+  }
+  26.666667% {
+    transform: rotate(86.924749deg)
+  }
+  33.333333% {
+    transform: rotate(-80.797831deg)
+  }
+  42.666667% {
+    transform: rotate(0deg)
+  }
+  66.666667% {
+    transform: rotate(0deg)
+  }
+  100% {
+    transform: rotate(0deg)
+  }
+}
+
+
+@keyframes agenda-calendar_ts__ts {
+  0% {
+    transform: scale(1, 1)
+  }
+  17.333333% {
+    transform: scale(1, 1)
+  }
+  26.666667% {
+    transform: scale(0.668711, 0.668711)
+  }
+  30% {
+    transform: scale(0.552957, 0.552957)
+  }
+  33.333333% {
+    transform: scale(0.662759, 0.662759)
+  }
+  42.666667% {
+    transform: scale(1, 1)
+  }
+  66.666667% {
+    transform: scale(1, 1)
+  }
+  100% {
+    transform: scale(1, 1)
+  }
+}
+
+@keyframes agenda-g4_to__to {
+  0% {
+    transform: translate(5.685471px, 8.676074px)
+  }
+  26.666667% {
+    transform: translate(8.037939px, 7.978680px)
+  }
+  33.333333% {
+    transform: translate(8.037939px, 7.978680px)
+  }
+  44% {
+    transform: translate(8.037939px, 7.978680px)
+  }
+  48% {
+    transform: translate(3.669071px, 9.273841px)
+  }
+  66.666667% {
+    transform: translate(5.685471px, 8.676074px)
+  }
+  100% {
+    transform: translate(5.685471px, 8.676074px)
+  }
+}
+
+
+@keyframes agenda-use2_to__to {
+  0% {
+    transform: translate(14.316689px, 1.527558px)
+  }
+  26.666667% {
+    transform: translate(14.394525px, 0.822277px)
+  }
+  33.333333% {
+    transform: translate(20.989011px, -5.733247px)
+  }
+  42% {
+    transform: translate(20.989011px, -5.733247px)
+  }
+  48.666667% {
+    transform: translate(14.316689px, 1.527558px)
+  }
+  66.666667% {
+    transform: translate(14.352069px, 1.206976px)
+  }
+  100% {
+    transform: translate(14.352069px, 1.206976px)
+  }
+}
+
+
+@keyframes agenda-use2_tr__tr {
+  0% {
+    transform: rotate(-184.724064deg)
+  }
+  10.333333% {
+    transform: rotate(-184.724064deg)
+  }
+  16.666667% {
+    transform: rotate(-78.943459deg)
+  }
+  26.666667% {
+    transform: rotate(-78.943459deg)
+  }
+  33.333333% {
+    transform: rotate(0deg)
+  }
+  42% {
+    transform: rotate(0deg)
+  }
+  49% {
+    transform: rotate(-184.724064deg)
+  }
+  66.666667% {
+    transform: rotate(-184.724064deg)
+  }
+  100% {
+    transform: rotate(-184.724064deg)
+  }
+}
+
+
+.asso-is-hover {
+  &:hover {
+    #agenda-calendar_to {
+      animation: agenda-calendar_to__to 3000ms linear infinite normal forwards
+    }
+
+    #agenda-calendar_tr {
+      animation: agenda-calendar_tr__tr 3000ms linear infinite normal forwards
+    }
+
+    #agenda-calendar_ts {
+      animation: agenda-calendar_ts__ts 3000ms linear infinite normal forwards
+    }
+    #agenda-g4_to {
+      animation: agenda-g4_to__to 3000ms linear infinite normal forwards
+    }
+
+    #agenda-use2_to {
+      animation: agenda-use2_to__to 3000ms linear infinite normal forwards
+    }
+
+    #agenda-use2_tr {
+      animation: agenda-use2_tr__tr 3000ms linear infinite normal forwards
+    }
+  }
+}

@@ -1,0 +1,14 @@
+//gradient button
+.button {
+  &.is-gradient {
+    background: linear-gradient(to bottom right,$white,$lightblue);
+    border:1px solid $highblue;
+    color: $deepblue;
+  }
+  &.is-gradient-blue {
+    background: linear-gradient(to  right,$iceblue,rgba($skyblue,0.75));
+    border:1px solid $picblue;
+    color: $white;
+    box-shadow: 0 12px 28px rgba($picblue,0.35)  ;
+  }
+}

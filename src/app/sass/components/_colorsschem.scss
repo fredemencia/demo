@@ -1,0 +1,30 @@
+/*
+ *
+ * Base colors
+ *
+ */
+
+///
+/// @type Bool
+///
+$include-bl-colors: true !default;
+
+
+$bl-color-palette:  $colors !default;
+
+@if $include-bl-colors {
+  // Define 'bg-**' classes for every color scheme with a `background`
+  // property
+  @each $name, $scheme in $bl-color-palette {
+    $background: nth($scheme, 1);
+    $colortxt: nth($scheme, 2);
+    &.is-bl-#{$name} {
+      background:$background ;
+      color:  $colortxt;
+      h1, h2, h3, h4, h5, h6,p {
+        color:  $colortxt;
+      }
+    }
+  }
+}
+
