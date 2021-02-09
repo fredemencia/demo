@@ -80,9 +80,10 @@ window.addEventListener("load", function () {
   new Splide( '#splide', {
     type       : 'fade',
     // heightRatio: 0.5,
-    pagination : false,
-    arrows     : false,
+    pagination : true,
+    arrows     : true,
     cover      : true,
+    autoplay:true
   }).mount();
 
   let tlh = gsap.timeline({
@@ -99,7 +100,45 @@ window.addEventListener("load", function () {
   });
 
   tlh.from(".fullslider", {y:120,scale: 0.5,  transformOrigin: "center bottom",autoAlpha: 0.9, ease: "none"},0)
-  .to(".fullslider", {y: innerHeight * -0.1,scale: 1,} );
+  .to(".fullslider", {y: innerHeight * -0.1,scale: 1,} )
+   .addLabel("fullok");
+
+  gsap.to("#text__fade", {
+    scrollTrigger: {
+      scroller: pageContainer,
+      trigger: ".is-navagora",
+      start: "+=10",
+      end: "+=50",
+      toggleActions: "play  resume reverse reset"
+    },
+    duration: 0.5,
+    opacity: "0",
+    ease: "none"
+  });
+
+
+
+  let height = window.innerHeight;
+  let tl = gsap.timeline({
+    // yes, we can add it to an entire timeline!
+    scrollTrigger: {
+      scroller: pageContainer,
+      trigger: ".triggerslidecontent",
+      start: "top top",
+      end:"bottom top",
+      scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+      //markers: true,
+
+    },
+    duration: 0.5,
+    opacity: "0",
+    ease: "none"
+  });
+
+// add animations and labels to the timeline
+  tl.addLabel("start")
+    .from(".splide__slide__text", { autoAlpha: 0,y: '100%'})
+    .to(".splide__slide__text", {autoAlpha: 1})
 
   ScrollTrigger.matchMedia({
     "(max-width: 959px)": () => {

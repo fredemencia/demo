@@ -1,3 +1,15 @@
+
+$container-offset: (2 * $gap) !default;
+$container-max-width: $fullhd !default;
+
+.triggerslidecontent {
+  height: 10%;
+  position: absolute;
+  width: 1px;
+  pointer-events: none;    background: transparent;
+  z-index: 20;
+  top:10%;
+}
 .hero-area {
   position: relative;
   display: block;
@@ -10,6 +22,8 @@
     transform: translate(-50%, 0%);
     width: 85%;
     height: 85%;
+      max-width: min($widescreen, $container-max-width) - $container-offset;
+
     position: absolute;
     display: flex;
     align-content: flex-end;
@@ -17,27 +31,37 @@
     pointer-events: none;
     z-index: 2;
     .fullslider {
-      border-radius: 2rem;
-      overflow: hidden;
+      border-radius:0.6rem;
+      //overflow: hidden;
+      .splide__arrows button.splide__arrow--prev {
+        transform: rotate(
+            180deg
+        );
+      }
       bottom:0;
       width: 100%;
       height: 100%;
       pointer-events:initial;
-      box-shadow: 0rem 0 2rem rgba(0,0,0,0.2);
+      //box-shadow: 0rem 0 2rem rgba(0,0,0,0.2);
       .splide {
        width: 100%;
         height: 100%;
+        background: transparent;
         .splide__slide__container {
           height: 100%;
           width: 100%;
+          border-radius: 0.6rem;
         }
         .splide__track,.splide__slide,.splide__list {
           height: 100%;
           width: 100%;
         }
         .splide__list {
-          border-radius: 2rem;
+          border-radius: 0.6rem;
           overflow: hidden;
+        }
+        .splide__track {
+          height: calc(100% - 2rem);
         }
       }
     }
@@ -148,4 +172,26 @@
   padding: 0.5rem;
   border-radius: 0.6rem;
   background: rgba(250,250,250,0.8);
+}
+.splide__slide__container {
+  &:before {
+    display: block;
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    //background: linear-gradient(to bottom,rgba(255,255,255,0),rgba(255,255,255,0.5) 75% );
+  }
+}
+.splide__slide__text {
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  padding: 2rem;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.75) 75%);
+  min-height: 25%;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
 }
