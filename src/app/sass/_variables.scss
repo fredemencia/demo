@@ -125,7 +125,6 @@ $primary-dark: findDarkColor($primary) ;
 $link-invert: findColorInvert($link) ;
 $link-light: findLightColor($link) ;
 $link-dark: findDarkColor($link) ;
-
 $info-invert: findColorInvert($info) ;
 $info-light: findLightColor($info) ;
 $info-dark: findDarkColor($info) ;
@@ -150,7 +149,7 @@ $navbar-height: 5rem !default
 $navbar-padding-vertical: 1rem !default
 $navbar-padding-horizontal: 2rem !default
 
-$projectcolors: ("beige-lighter":($beige-lighter,$near-black),"nearblack": ($near-black, $white),"navcol": ($deepblue, $trans),"navagora": (lighten($deepblue, 5%), $deepblue), "bluetrans": ($strongblue, $white), "pastblue": ($pastblue, $black), "lightpink": ($lightpink, $black), "topblue": ($topblue, $black));
+$projectcolors: ("highlev": ($deepblue, $white, $skyblue, $skyblue), "skyblue":($skyblue,$white),"beige-lighter":($beige-lighter,$near-black),"nearblack": ($near-black, $white),"navcol": ($deepblue, $trans),"navagora": (lighten($deepblue, 5%), $deepblue), "bluetrans": ($strongblue, $white), "pastblue": ($pastblue, $black), "lightpink": ($lightpink, $black), "topblue": ($topblue, $black));
 $custom-colors:$projectcolors;
 
 $widescreen-enabled: true;

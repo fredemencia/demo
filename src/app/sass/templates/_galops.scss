@@ -18,7 +18,18 @@ $logowr: (  $fullhd:180px, $widescreen: 160px,$desktop: 140px,$tablet: 140px );
   }
 }
 
-.test {width:0px;}
+
+body {
+  background: $beige-lighter;
+}
+
+#bg_nodes {
+  position: fixed;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+
+}
 //////////////
 // sass/scss
 
