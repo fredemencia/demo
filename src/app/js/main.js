@@ -135,10 +135,33 @@ window.addEventListener("load", function () {
     ease: "none"
   });
 
+  let tl2 = gsap.timeline({
+    // yes, we can add it to an entire timeline!
+    scrollTrigger: {
+      scroller: pageContainer,
+      trigger: ".triggerslidecontent",
+      start: "top top",
+      end:"center +50% top",
+      scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+      //markers: true,
+
+    },
+    duration: 3,
+    opacity: "0",
+    ease: "Circ.easeIneaseIn "
+  });
+
 // add animations and labels to the timeline
   tl.addLabel("start")
     .from(".splide__slide__text", { autoAlpha: 0,y: '100%'})
     .to(".splide__slide__text", {autoAlpha: 1})
+// add animations and labels to the timeline
+  tl2.addLabel("start2")
+    .from(".container_hero", { autoAlpha: 1})
+    .to(".container_hero", {
+      duration: 2,
+      autoAlpha: 0,
+      ease: "Circ.easeIneaseIn "})
 
   ScrollTrigger.matchMedia({
     "(max-width: 959px)": () => {

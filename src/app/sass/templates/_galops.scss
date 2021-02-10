@@ -321,7 +321,7 @@ section.is-grid {
 }
 .has-background-sky {background: linear-gradient(to bottom, #F2F1F1 50%, #F2F1F1)}
 
-.title.is-1 {
+.title.is-1,.title.is-2,.title.is-3 {
  &.is-bigger {
    > span {
      font-size :115%;

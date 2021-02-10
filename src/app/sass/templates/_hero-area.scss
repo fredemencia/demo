@@ -3,7 +3,7 @@ $container-offset: (2 * $gap) !default;
 $container-max-width: $fullhd !default;
 
 .triggerslidecontent {
-  height: 10%;
+  height: 6%;
   position: absolute;
   width: 1px;
   pointer-events: none;    background: transparent;
@@ -22,7 +22,7 @@ $container-max-width: $fullhd !default;
     transform: translate(-50%, 0%);
     width: 85%;
     height: 85%;
-      max-width: min($widescreen, $container-max-width) - $container-offset;
+      max-width: min($desktop, $container-max-width) - $container-offset;
 
     position: absolute;
     display: flex;
@@ -48,7 +48,7 @@ $container-max-width: $fullhd !default;
         height: 100%;
         background: transparent;
         .splide__slide__container {
-          height: 100%;
+          height: calc(100% - 12rem);
           width: 100%;
           border-radius: 0.6rem;
         }
@@ -190,7 +190,7 @@ $container-max-width: $fullhd !default;
   bottom: 0%;
   width: 100%;
   padding: 2rem;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.75) 75%);
+  //background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.75) 75%);
   min-height: 25%;
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
