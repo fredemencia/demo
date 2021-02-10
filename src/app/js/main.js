@@ -130,7 +130,7 @@ window.addEventListener("load", function () {
       //markers: true,
 
     },
-    duration: 0.5,
+    duration: 0.6,
     opacity: "0",
     ease: "none"
   });
